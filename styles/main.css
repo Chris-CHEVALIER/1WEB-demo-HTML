@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+}
+
+.container {
+  background-color: black;
+  color: white;
+}
+
+.container h2 {
+  margin: 0;
+}
+
+.container a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.welcome {
+  color: violet;
+  font-size: 50px;
+}
+
+.menu {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.description {
+  background-color: yellow;
+}
+
+table,
+td,
+th {
+  border: 5px solid blue;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.students-table {
+  width: 50%;
+  margin: 0 0 25px 25px;
+}
+
+.image {
+  margin: 0 25%;
+}
+
+@media all and (max-width: 560px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .students-table {
+    /* width: 90vw;
+    margin: 0; */
+    display: none;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0;
+  }
+}

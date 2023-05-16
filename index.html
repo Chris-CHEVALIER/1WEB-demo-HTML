@@ -2,73 +2,103 @@
 <html lang="fr-FR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>École Hexagone</title>
-    <style>
-        table, td, th {
-            border: 1px solid black;
-            border-collapse: collapse;
-            text-align: center;
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h2>Bienvenue à l'école Hexagone ! :)</h2>
+    <header class="container">
+      <h2 class="welcome">Bienvenue à l'école Hexagone !</h2>
 
-    <h3>Sommaire</h3>
-    <ol>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#legal-notice">Mentions légales</a></li>
-      <li><a href="#contact">Nous contacter</a></li>
-    </ol>
+      <h3>Sommaire</h3>
+      <nav>
+        <ol class="menu">
+          <li><a href="#description">Description</a></li>
+          <li><a href="#legal-notice">Mentions légales</a></li>
+          <li><a href="#contact">Nous contacter</a></li>
+        </ol>
+      </nav>
+    </header>
 
-    <h4 id="description">Description</h4>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quos
-      enim libero veniam tenetur repellat nam provident eum, illo, magni minus
-      <br />
-      deleniti repellendus architecto aut culpa ea perspiciatis sequi deserunt.
-    </p>
+    <main>
+      <section class="description">
+        <h4 id="description">Description</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          quos enim libero veniam tenetur repellat nam provident eum, illo,
+          magni minus
+          <br />
+          deleniti repellendus architecto aut culpa ea perspiciatis sequi
+          deserunt.
+        </p>
+      </section>
 
-    <table style="width: 100%">
-        <tr>
+      <section>
+        <table class="students-table">
+          <tr>
             <th colspan="2">Noms</th>
             <th>Âge</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Sebri</td>
             <td>Saber</td>
             <td>21</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Hayad</td>
             <td>Néo</td>
             <td>20</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Mersani</td>
             <td>Brahim</td>
             <td>20</td>
-        </tr>
-    </table>
+          </tr>
+        </table>
+      </section>
 
-    <img src="./assets/images/logo.png" alt="Logo Hexagone" />
+      <section>
+        <img
+          width="50%"
+          src="https://www.tunisie.campusfrance.org/sites/pays/files/tunisie/hexagone.png"
+          alt="Campus Tunisie"
+          class="image"
+        />
+      </section>
 
-    <img
-      width="50%"
-      src="https://www.tunisie.campusfrance.org/sites/pays/files/tunisie/hexagone.png"
-      alt="Campus Tunisie"
-    />
+      <br />
 
-    <small id="legal-notice">Mentions légales</small>
-    <a href="https://www.ecole-hexagone.com/fr/fr/" target="_blank"
-      >Site web officiel</a
-    >
-    <a href="./pages/about.html">À propos</a>
+      <video src="./videos/planet.mp4" autoplay muted loop>
+        Votre navigateur ne supporte pas la vidéo
+      </video>
 
-    <a id="contact" href="mailto:chevalier@chris-freelance.com"
-      >Nous contacter</a
-    >
+      <audio src="./audio/sound.mp3" controls>
+        Votre navigateur ne supporte pas l'audio
+      </audio>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/oEAuNzWXRjM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      
+    </main>
+
+    <footer>
+      <small id="legal-notice">Mentions légales</small>
+      <a href="https://www.ecole-hexagone.com/fr/fr/" target="_blank">
+        Site web officiel
+      </a>
+      <a href="./pages/about.html">À propos</a>
+
+      <a id="contact" href="mailto:chevalier@chris-freelance.com">
+        Nous contacter
+      </a>
+    </footer>
   </body>
 </html>
