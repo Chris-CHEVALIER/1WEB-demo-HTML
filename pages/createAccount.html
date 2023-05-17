@@ -4,65 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/createAccount.css" />
     <title>École Hexagone - Créer un compte</title>
   </head>
   <body>
-    <h2>Créer un compte utilisateur</h2>
-    <form method="POST">
-      <label for="firstName">Prénom</label> <br />
-      <input
-        type="text"
-        name="firstName"
-        id="firstName"
-        placeholder="Votre prénom"
-      />
-      <br />
-      <label for="lastName">Nom</label> <br />
-      <input
-        type="text"
-        name="lastName"
-        id="lastName"
-        placeholder="Votre nom de famille"
-      /><br />
+    <!-- "Bordures" dégradées de couleur -->
+    <div class="border-gradient">
+      <div class="content">
+        <table class="informations">
+          <tr>
+            <th colspan="2">Noms</th>
+            <th>Âge</th>
+          </tr>
+          <tr>
+            <td>Chris</td>
+            <td>Chevalier</td>
+            <td>30</td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-      <label for="age">Âge</label> <br />
-      <input
-        type="number"
-        name="age"
-        id="age"
-        min="15"
-        max="100"
-        style="width: 140px"
-        placeholder="Votre âge"
-      />
-      <br />
+    <div class="form-container">
+      <h2>Créer un compte utilisateur</h2>
+      <form method="POST">
+        <label for="firstName">Prénom</label> <br />
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Votre prénom"
+        />
+        <br />
+        <label for="lastName">Nom</label> <br />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Votre nom de famille"
+        /><br />
 
-      <label for="password">Mot de passe</label> <br>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Votre mot de passe"
-      /> <br>
+        <label for="age">Âge</label> <br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="15"
+          max="100"
+          style="width: 140px"
+          placeholder="Votre âge"
+        />
+        <br />
 
-      <label for="type">Type d'utilisateur</label> <br />
-      <input type="radio" name="type" id="student" />
-      <label for="student">Étudiant</label> <br />
-      <input type="radio" name="type" id="trainer" />
-      <label for="trainer">Formateur</label><br />
-      <input type="radio" name="type" id="admin" />
-      <label for="admin">Administrateur</label><br />
+        <label for="password">Mot de passe</label> <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Votre mot de passe"
+        />
+        <br />
 
-      <label for="hobbies">Passions</label> <br />
-      <select name="hobbies" id="hobbies">
-        <option value="sport">Sport</option>
-        <option value="video-games">Jeux vidéo</option>
-        <option value="art">Art</option>
-      </select>
-      <br />
-      <br />
+        <label for="type">Type d'utilisateur</label> <br />
+        <input type="radio" name="type" id="student" />
+        <label for="student">Étudiant</label> <br />
+        <input type="radio" name="type" id="trainer" />
+        <label for="trainer">Formateur</label><br />
+        <input type="radio" name="type" id="admin" />
+        <label for="admin">Administrateur</label><br />
 
-      <input type="submit" value="Créer" />
-    </form>
+        <label for="hobbies">Passions</label> <br />
+        <select name="hobbies" id="hobbies">
+          <option value="sport">Sport</option>
+          <option value="video-games">Jeux vidéo</option>
+          <option value="art">Art</option>
+        </select>
+        <br />
+        <br />
+
+        <input type="submit" value="Créer" />
+      </form>
+    </div>
   </body>
 </html>

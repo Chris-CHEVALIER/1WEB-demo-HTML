@@ -1,0 +1,30 @@
+/* fond du conteneur pour la "bordure" */
+.border-gradient {
+  background: linear-gradient(to left, red, dodgerblue);
+  padding: 5px;
+}
+
+/* passage du fond du contenu en noir sur blanc */
+.content {
+  background: white;
+  color: black;
+}
+
+.informations {
+  width: 100%;
+  text-align: center;
+}
+
+.informations,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* Centre le formulaire et le titre enfants horizontalement */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

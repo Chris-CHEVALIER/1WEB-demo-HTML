@@ -3,11 +3,15 @@
 body {
   margin: 0;
   font-family: 'Dosis', sans-serif;
+  color: white;
 }
 
-.container {
-  background-color: black;
-  color: white;
+/* Place la vidéo à une position fixe de ma page mais derrière le reste du contenu*/
+video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .container h2 {
@@ -39,10 +43,6 @@ body {
   /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.description {
-  background-color: yellow;
 }
 
 table,
