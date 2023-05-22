@@ -63,6 +63,8 @@ th {
   margin: 0 25%;
 }
 
+
+
 @media all and (max-width: 560px) {
   .menu {
     flex-direction: column;
