@@ -12,10 +12,14 @@
 
 <body>
   <?php
+  ini_set('error_prepend_string',"<div style='color:red; background-color: yellow'>")  ;
+  ini_set('error_append_string',"</div>");
+  
   /* $firstName = "Chris";
   echo "<h3>Bienvenue ! :)</h3>";
   echo $firstName . "\n";
   echo "test"; */
+  echo $firstName;
 
   $peugeot206 = [
     "brand" => "Peugeot",
@@ -34,6 +38,7 @@
   foreach ($peugeot206 as $information) {
     echo "$information <br>";
   } */
+  
 
   $result = "";
   foreach ($peugeot206 as $information) {
