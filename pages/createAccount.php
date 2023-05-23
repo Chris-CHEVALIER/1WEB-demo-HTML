@@ -12,9 +12,35 @@
 
 <body>
   <?php
+  /* $firstName = "Chris";
   echo "<h3>Bienvenue ! :)</h3>";
-  echo $firstName;
-  echo "test";
+  echo $firstName . "\n";
+  echo "test"; */
+
+  $peugeot206 = [
+    "brand" => "Peugeot",
+    "model" => "206",
+    "color" => "bleue",
+    "cv" => "14"
+  ];
+
+  /* echo "<pre>";
+  print_r($peugeot206);
+  echo "</pre>";
+
+  echo "Ma {$peugeot206["brand"]} {$peugeot206["model"]} est {$peugeot206["color"]}.<br>";
+  echo "Ma " . $peugeot206["brand"] . " " . $peugeot206["model"] . " est " . $peugeot206["color"] . ".<br>";
+
+  foreach ($peugeot206 as $information) {
+    echo "$information <br>";
+  } */
+
+  $result = "";
+  foreach ($peugeot206 as $information) {
+    $result .= $information . " ";
+  }
+  echo $result;
+
   ?>
 
   <!-- "Bordures" dégradées de couleur -->
