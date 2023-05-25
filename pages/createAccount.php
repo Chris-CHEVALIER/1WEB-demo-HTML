@@ -12,14 +12,15 @@
 
 <body>
   <?php
-  ini_set('error_prepend_string',"<div style='color:red; background-color: yellow'>")  ;
-  ini_set('error_append_string',"</div>");
-  
+  require("../navbar.php");
+
+  ini_set('error_prepend_string', "<div style='color:red; background-color: yellow'>");
+  ini_set('error_append_string', "</div>");
+
   /* $firstName = "Chris";
   echo "<h3>Bienvenue ! :)</h3>";
   echo $firstName . "\n";
   echo "test"; */
-  echo $firstName;
 
   $peugeot206 = [
     "brand" => "Peugeot",
@@ -37,14 +38,26 @@
 
   foreach ($peugeot206 as $information) {
     echo "$information <br>";
-  } */
+  } 
   
 
   $result = "";
   foreach ($peugeot206 as $information) {
     $result .= $information . " ";
   }
+  echo $result;*/
+
+  function substract(int $x, int $y): int
+  {
+    return $x - $y;
+  }
+
+  $result = substract(5, 3);
   echo $result;
+
+  if ($_GET) {
+    echo "Bienvenue " . $_GET["firstName"] . " " . $_GET["lastName"] . " !";
+  }
 
   ?>
 
@@ -67,7 +80,7 @@
 
   <div class="form-container">
     <h2>Créer un compte utilisateur</h2>
-    <form method="POST">
+    <form method="GET">
       <label for="firstName" class="text-danger fw-bold my-5">Prénom</label>
       <br />
       <input type="text" name="firstName" id="firstName" placeholder="Votre prénom" class="form-control" />
